@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proyecto de entrega 1</title>
+</head>
+<body>
+  <link rel="stylesheet" href="main.js">
+  <link rel="stylesheet" href="javaScript.js">
+
+  <h1>Proyecto de entrega 1</h1>
+  <h2>Explicación de la entrega</h2>
+  <p>Vengo del curso de Desarrollo Web, mi idea es que a partir de la entrega que viene poder modificar desde ahi y hacer funcionar la página web que ya empecé; en este momento me estan corrigiendo ese trabajo y por eso no puedo modificarlo desde ahora</p>
+
+  <script>
+    //Verificación de edad//
+    function verificarEdad() {
+      // Obtener el nombre y la edad ingresados por el usuario
+      let nombre = prompt("Ingrese su nombre:");
+      let edad = prompt("Ingrese su edad:");
+
+      // Convertir la edad a un número entero//
+      edad = parseInt(edad);
+
+      // Verificar si con la edad puede acceder a la pagina//
+      if (esMayorDeEdad(edad)) {
+        // Permitir el acceso a la página
+        alert("Bienvenido/a, " + nombre + ". Puedes acceder a la página.");
+
+        // Ejemplo de ciclo: Mostrar números del 1 al 10 en la consola//
+        for (var i = 1; i <= 10; i++) {
+          console.log(i);
+        }
+
+        // Llamada a otra función//
+        saludar(nombre);
+      } else {
+        // Rechazar el acceso a la página//
+        alert("Lo siento, " + nombre + ". No puedes acceder a la página debido a tu edad.");
+        // Redireccionar a otra página (opcional)
+        window.location.href = "otra_pagina.html";
+      }
+    }
+
+    // Veriificar si con la edad puede acceder a la página//
+    function esMayorDeEdad(edad) {
+      return edad >= 18;
+    }
+
+    // Función para saludar al usuario//
+    function saludar(nombre) {
+      console.log("Holaa, " + nombre + "!");
+    }
+
+    // Llamar a la función al cargar la página//
+    window.onload = verificarEdad;
+  </script>
+
+</body>
+</html>
+

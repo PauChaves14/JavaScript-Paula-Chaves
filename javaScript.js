@@ -1,4 +1,4 @@
-let opcion = "quien es mas grande";
+let opcion = "Quien crees que es mas grande?";
 while (opcion !== "salir") {
 opcion = prompt("Ingrese un equipo (salir para terminar):");
 switch (opcion) {
@@ -9,7 +9,7 @@ switch (opcion) {
     alert("Boca Jrs");
     break;
     case "3":
-    alert("Racing Club");
+    alert("Talleres");
     break;
     case "salir":
     alert("Saliendo del programa...");

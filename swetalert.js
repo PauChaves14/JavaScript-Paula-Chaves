@@ -127,7 +127,7 @@
     return Array.prototype.slice.call(t);
     }
     function g(t, e) {
-      var n;
+    var n;
     (n = '"'
         .concat(
         t,

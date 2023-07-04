@@ -32,8 +32,8 @@ class Clase {
   }
 }
 
-const jugador1 = new jugador("martin", "palermo");
-const tecnico1 = new tecnico("caruso", "lombardi");
+const jugador1 = new jugador("nahuel", "bustos");
+const tecnico1 = new tecnico("Javier", "Gandolfi");
 
 const clase1 = new Clase(jugador, tecnico, "JavaScript");
 clase1.mostrarClase();
